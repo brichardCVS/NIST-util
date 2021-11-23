@@ -94,6 +94,9 @@ for k in keywords:
 with open("3-Final CVEs.json", "w+") as outFile2:
     outFile2.write(json.dumps(output_json, indent=2, sort_keys=True))
 
+# # ==========================================================================================
+# # results logging
+# # ==========================================================================================
 resultObj = dict(zip(keywords, results))
 total = len(output_json)
 
